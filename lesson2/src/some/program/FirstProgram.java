@@ -2,11 +2,8 @@ package some.program;
 
 class FirstProgram {
     public static void main(String[] args) {
-      int i = 1;
-
-      while (i <= 5) {
-        isEven(i);
-        i++;
+      for (int i = 5; i > 0; i--) {
+          isEven(i);
       }
     }
 
