@@ -2,9 +2,12 @@ package some.program;
 
 class FirstProgram {
     public static void main(String[] args) {
-      do {
-        isEven(10);
-      } while (false); // the loop condition is false, however we call the isEven methos
+      int i = 0;
+      while (true) { // infinite loop
+          if (i != 5) break; // "continue" keyword would the current iteration and goes back to the condition check. In Java, if we replace "break" to "continue", it will coause compilation error 
+          i++;
+      }
+      System.out.println("Elvis has left the building");
     }
 
     public static void isEven(int i) {
