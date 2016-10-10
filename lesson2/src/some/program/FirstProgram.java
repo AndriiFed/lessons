@@ -4,10 +4,10 @@ class FirstProgram {
     public static void main(String[] args) {
       int i = 0;
       while (true) { // infinite loop
-          if (i != 5) break; // "continue" keyword would the current iteration and goes back to the condition check. In Java, if we replace "break" to "continue", it will coause compilation error 
-          i++;
+          if (i != 5) return;
       }
-      System.out.println("Elvis has left the building");
+      // In case of "return" above the method invokation below would cause compilation error: unreachable statement
+      //System.out.println("Elvis has left the building");
     }
 
     public static void isEven(int i) {
