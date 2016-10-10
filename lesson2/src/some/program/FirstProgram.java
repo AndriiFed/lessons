@@ -2,9 +2,9 @@ package some.program;
 
 class FirstProgram {
     public static void main(String[] args) {
-      for (int i = 5; i > 0; i--) {
-          isEven(i);
-      }
+      do {
+        isEven(10);
+      } while (false); // the loop condition is false, however we call the isEven methos
     }
 
     public static void isEven(int i) {
