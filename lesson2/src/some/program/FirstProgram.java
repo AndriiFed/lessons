@@ -2,12 +2,20 @@ package some.program;
 
 class FirstProgram {
     public static void main(String[] args) {
-      int i = 10;
+      isEven(1);
+      isEven(2);
+      isEven(3);
+      // ....
+      isEven(10);
+    }
+
+    public static void isEven(int i) {
+      System.out.print(i);
 
       if (i % 2 == 0) {
-          System.out.println("Even");
+          System.out.println(" is even");
       } else {
-          System.out.println("Odd");
+          System.out.println(" is odd");
       }
     }
 }
