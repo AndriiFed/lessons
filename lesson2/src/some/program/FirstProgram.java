@@ -7,13 +7,14 @@ class FirstProgram {
           System.out.print(" is even? ");
           System.out.println(isEven(i));
       }
+
+      // You can find the operator precedence table there https://docs.oracle.com/javase/tutorial/java/nutsandbolts/operators.html
+      System.out.println(2 + 2 * 2);
+      System.out.println((2 + 2) * 2);
+
     }
 
     public static boolean isEven(int i) {
-      if (i % 2 == 0) {
-          return true;
-      } else {
-          return false;
-      }
+      return (i % 2 == 0);
     }
 }
