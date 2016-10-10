@@ -1,8 +1,9 @@
-```shell
-user@localhost$ java -cp out Hello
-Hello Worm!
+Компилируем
+```sh
+[user@localhost]$ javac -d out src/Hello.java
 ```
-```shell
-user@localhost$ java -cp out Hello
+Запускаем
+```sh
+[user@localhost]$ java -cp out Hello
 Hello Worm!
 ```
