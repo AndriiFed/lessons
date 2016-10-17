@@ -16,6 +16,14 @@ class FirstProgram {
 
       System.out.println(student);
       System.out.println(student2);
+
+      while (!student2.isDead()) {
+        // sout
+      }
+      student2.growImidiately();
+      System.out.println(student2);
+      student2.growImidiately();
+      System.out.println(student2);
     }
 
 
@@ -26,10 +34,16 @@ class Student {
   public int age;
 
   public String toString() {
+    if (isAlreadyDead())
+      return "I was a student. I'm dead now :(";
     return "I'm a student. My name is " + name + ". I'm " + age + " years old." ;
   }
 
-  public void foo() {
-    name = "";
+  public boolean isAlreadyDead() {
+    return age >= 94;
+  }
+
+  public void growImidiately() {
+    age++;
   }
 }
