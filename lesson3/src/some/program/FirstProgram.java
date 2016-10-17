@@ -17,6 +17,9 @@ class FirstProgram {
       System.out.println(student2);
 
       System.out.println("My name was " + student2.getName());
+
+      System.out.println("Total number of created Student objects is : " + Student.studentsQty);
+
     }
 }
 
@@ -26,9 +29,13 @@ class Student {
 
   public int deadAge = 94;
 
+  public static int studentsQty = 0;
+
   public Student(String name, int age) {
     this.name = name;
     this.age = age;
+
+    studentsQty++;
   }
 
   public Student(String name, int age, int deadAge) {
