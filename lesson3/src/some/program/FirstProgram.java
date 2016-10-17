@@ -5,33 +5,37 @@ class FirstProgram {
       Object obj = new Object();
       String str = "hello";
 
-      Student student = new Student();
-      student.name = "John Doe";
-      student.age = 12;
-
-      Student student2 = new Student();
-      student2.name = "Johnathan Doelsky";
-      student2.age = 92;
-
+      Student student = new Student("John Doe", 12);
+      Student student2 = new Student("Johnathan Doelsky", 92, 93);
 
       System.out.println(student);
       System.out.println(student2);
 
-      while (!student2.isDead()) {
-        // sout
-      }
       student2.growImidiately();
       System.out.println(student2);
       student2.growImidiately();
       System.out.println(student2);
+
+      System.out.println("My name was " + student2.getName());
     }
-
-
 }
 
 class Student {
   public String name;
   public int age;
+
+  public int deadAge = 94;
+
+  public Student(String name, int age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  public Student(String name, int age, int deadAge) {
+    this(name, age);
+
+    this.deadAge = deadAge;
+  }
 
   public String toString() {
     if (isAlreadyDead())
@@ -39,8 +43,16 @@ class Student {
     return "I'm a student. My name is " + name + ". I'm " + age + " years old." ;
   }
 
+  public String getName() {
+    return "Mr." + name;
+  }
+
+  public int getAge() {
+    return age;
+  }
+
   public boolean isAlreadyDead() {
-    return age >= 94;
+    return age >= deadAge;
   }
 
   public void growImidiately() {
