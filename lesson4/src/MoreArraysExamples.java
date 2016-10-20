@@ -26,12 +26,22 @@ class MoreArraysExample {
       int[][][] aaa1 = new int[1][][];
       System.out.println(aaa1[0]);
 
+      varargs();
       varargs("Hello", "Worm", ":)", " ", "lol", "It works");
+      varargsWithLeadingParameter(".....");
   }
 
   public static void varargs(String ...args) {
     for (int i = 0; i < args.length; i++) {
       System.out.print(args[i] + " ");
     }
+  }
+
+  public static void varargsWithLeadingParameter(String leadingString, String ...args) {
+    System.out.print("Starting from: " + leadingString + " ");
+
+    varargs(args);
+
+    System.out.println("\n" + args.length);
   }
 }
