@@ -21,5 +21,10 @@ class LightBulb {
           // do smth.
       }
 
+public boolean equals(Object that) {
+  if (this == that) return true;
+
+  return equalTo((LightBulb)that);
+}
 
 }
