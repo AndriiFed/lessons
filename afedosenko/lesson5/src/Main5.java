@@ -21,5 +21,10 @@ class Main5 {
         sch1.addGroup(gr2);
         System.out.println(sch1.toString());
 
+        
+
+        Init obj = new Init();
+        Init obj2 = new Init(101l);
+
     }
 }
