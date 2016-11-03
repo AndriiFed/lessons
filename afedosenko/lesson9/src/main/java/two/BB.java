@@ -5,7 +5,11 @@ import one.B;
 public class BB extends B {
 
   protected String str = "";
-  public static final String CONSTANT_STRING = "CONSTANT";
+  public final String CONSTANT_STRING;
+
+  public BB() {
+    CONSTANT_STRING = "CONSTANT2";
+  }
 
   @Override
   public void foo() {
