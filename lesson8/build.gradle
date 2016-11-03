@@ -1,0 +1,19 @@
+apply plugin: 'java'
+
+repositories {
+  jcenter()
+}
+
+dependencies {
+    testCompile 'junit:junit:4.12'
+}
+
+
+task execute(type:JavaExec) {
+    if (project.hasProperty('mainClass')) {
+      main = mainClass
+    } else {
+      main = 'Main'
+    }
+    classpath = sourceSets.main.runtimeClasspath
+  }
