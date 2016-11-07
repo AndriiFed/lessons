@@ -1,6 +1,7 @@
 package zoo;
 
-public abstract class Animal {
-  abstract public void makeNoise();
-
+public interface Animal {
+  String PSEUDO_CONST = "hello const";
+  public void makeNoise();
+  void eatFood(Food food);
 }
