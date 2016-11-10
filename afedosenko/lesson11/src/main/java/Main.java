@@ -1,4 +1,6 @@
-import shape.example1.Shape;
+//import shape.example1.Shape;
+import shape.example3.*;
+
 
 public class Main {
   public static void main(String ... args) {
@@ -22,10 +24,21 @@ public class Main {
       System.out.println("A");
     }
 
-    Shape shape = new Shape(2, 4, 5);
+    /* Shape shape = new Shape(2, 4, 5);
     System.out.format("%nAREAS OF SHAPES:%n");
     System.out.format("%.2f %n", shape.calculateArea(Shape.ShapeType.SQUARE));
     System.out.format("%.2f %n", shape.calculateArea(Shape.ShapeType.RECTANGLE));
     System.out.format("%.2f %n", shape.calculateArea(Shape.ShapeType.CIRCLE));
+    */
+
+    Shape circle = new Circle(5.0);
+    System.out.format("%.2f %n", circle.calculateArea());
+
+    Shape square = new Square(10.0);
+    System.out.format("%.2f %n", square.calculateArea());
+
+    Shape rectangle = new Rectangle(10.0, 20.0);
+    System.out.format("%.2f %n", rectangle.calculateArea());
+
   }
 }

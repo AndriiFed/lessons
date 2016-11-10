@@ -23,6 +23,8 @@ public class Shape {
       case RECTANGLE: area = width * height;
         break;
       case CIRCLE: area = Math.PI * radius * radius;
+        break;
+      default: area = 0.0;
     }
     return area;
   }
