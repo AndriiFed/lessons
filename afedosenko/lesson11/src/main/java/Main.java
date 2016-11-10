@@ -1,5 +1,7 @@
 //import shape.example1.Shape;
 import shape.example3.*;
+import template.Foo;
+import template.Foo2;
 
 
 public class Main {
@@ -39,6 +41,14 @@ public class Main {
 
     Shape rectangle = new Rectangle(10.0, 20.0);
     System.out.format("%.2f %n", rectangle.calculateArea());
+
+    Shape[] shapes = {new Circle(5.0), new Square(6.0), new Rectangle(10.0, 2.0)};
+    for (Shape shape : shapes) {
+      System.out.format("%.2f %n", shape.calculateArea());
+    }
+
+    Foo foo = new Foo();
+    Foo2 foo2 = new Foo2();
 
   }
 }
