@@ -3,6 +3,10 @@ import template.Application2;
 
 import comparable.Student;
 
+import strategy.Duck;
+import strategy.RedHeadDuck;
+import strategy.RubberDuck;
+
 import java.util.Arrays;
 
 class Main {
@@ -19,8 +23,18 @@ class Main {
     Student st3 = new Student("john3", 14);
 
     Student[] students = {st1, st2, st3};
-    int idx = Arrays.binarySearch(students, st2);
+    int idx = Arrays.binarySearch(students, st3);
     System.out.println(students[idx]);
+
+    Duck duck1 = new RedHeadDuck("ReadHeadDuck");
+    duck1.display();
+    duck1.quack();
+    //duck1.fly();
+
+    Duck duck2 = new RubberDuck("RubberDuck");
+    duck2.display();
+    //duck2.fly();
+
   }
 
 }
