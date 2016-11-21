@@ -35,7 +35,7 @@ public class Bag<Item> {
     }
 
     public boolean hasNext() {
-      return current.next != null;
+      return current != null;
     }
 
     public Item next() {

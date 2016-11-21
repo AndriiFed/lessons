@@ -14,9 +14,11 @@ class Main {
     //bag.new Node<String>(); // works
     //bag.new Node<Integer>(); // fails
     //new Bag().new Node();
+    System.out.println("bag2 size: " + bag2.size());
+
     Bag.Iterator bagIterator = bag2.iterator();
     while(bagIterator.hasNext()) {
-      System.out.println(bagIterator.next());
+      System.out.println("bag2 contains: " + bagIterator.next());
     }
   }
 }
