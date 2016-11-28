@@ -18,8 +18,3 @@ task execute(type:JavaExec) {
 
   classpath = sourceSets.main.runtimeClasspath
 }
-
-
-compileJava {
-  options.compilerArgs << '-Xlint:unchecked'
-}
