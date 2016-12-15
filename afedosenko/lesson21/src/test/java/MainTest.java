@@ -132,10 +132,10 @@ public class MainTest {
     File file3 = new File(dir2, "file3");
     file3.createNewFile();
 
+    // pls finish at home
     //Files.walkFileTree(Paths.get(parentDir.getAbsolutePath(), SimpleFileVisitor<Path>()));
 
-
-  }
+   }
 
   @Test
   public void test9() throws Exception {
