@@ -1,4 +1,18 @@
 import org.junit.Test;
+<<<<<<< HEAD
+
+import static org.junit.Assert.*;
+
+public class MainTest {
+  @Test
+  public void test_nothing() {
+
+    assertEquals(true, true);
+  }
+
+
+
+=======
 import org.junit.Before;
 import org.junit.Ignore;
 
@@ -60,4 +74,5 @@ public class MainTest {
 
     assertThat(totalValue[0], is(30.0 + 30.0 + 20.0));
   }
+>>>>>>> aa1cc001ef647073b8d3f0f17c68f853f8a3cb72
 }
